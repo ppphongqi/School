@@ -1,17 +1,26 @@
 <template>
     <div class="out">
-        <div>hello</div>
-        <router-view/>
+        <v-header></v-header>
+        <div class="container">
+            <router-view/>
+        </div>
     </div>
 </template>
 
 <script>
+    import vHeader from '../components/header';
     export default {
-        name: "out"
+        components:{
+            'v-header':vHeader,
+        }
     }
 </script>
 
 
-<style scoped>
+<style lang="scss" scoped>
+    .container{
+        width: 100%;
 
+        padding-top: 5.5rem;
+    }
 </style>

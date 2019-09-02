@@ -12,7 +12,6 @@ const router = new Router({
     routes:[
         {
             path:'/',
-            name:'登录',
             component:resolve => require(['../views/out.vue'],resolve),
             children:[
                 {

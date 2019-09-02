@@ -37,7 +37,6 @@
                 <el-button
                         @click="goLogin"
                         class="login-btn" type="primary">
-
                     登录
                 </el-button>
 
@@ -85,10 +84,10 @@
     .index{
         margin: 1rem .3rem .3rem .3rem;
         padding:0 .5rem .5rem 0;
-        border: .1rem solid gray;
+        border: .1rem solid 	#D3D3D3;
         border-radius: .2em;
         background: #F5F5F5;
-        box-shadow: 0 .05em .25em gray;
+        box-shadow: 0 .05em .25em 	#D3D3D3;
         /*width:100%;*/
         height:20rem;
         color:black;

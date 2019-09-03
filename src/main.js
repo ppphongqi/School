@@ -4,13 +4,22 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css';
 import router from './router'
 import store from './store/index'
+import axios from 'axios'
 
 
 Vue.use(ElementUI);
-Vue.config.productionTip = false
+
+let instance = axios.create({
+  baseURL:'/'
+});
+
+Vue.prototype.$axios = instance;
+
+
+Vue.config.productionTip = false;
 
 new Vue({
   router,
   store,
   render: h => h(App),
-}).$mount('#app')
+}).$mount('#app');

@@ -111,7 +111,7 @@
     }
     .contentCard{
         height:1000px;
-        width:80%;
+        width:95%;
         margin-top: 4.6rem;
         margin-bottom:6.6rem;
         border: .1rem solid 	#D3D3D3;

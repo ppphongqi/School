@@ -75,6 +75,7 @@
         box-shadow: 0 .05em .25em 	#D3D3D3;
 
         .box-card{
+            background: #F5F5F5;
             font-size:.9rem;
             font-weight:600;
             display:flex;
@@ -119,11 +120,12 @@
         box-shadow: 0 .05em .25em 	#D3D3D3;
     }
     .footerCard{
+
         position: fixed;
         bottom:0;
         height:6.5rem;
         width:100%;
-        background:black;
+        background: #F5F5F5;
         border: .05rem solid #D3D3D3;
         border-radius: .6em;
         box-shadow: 0 .05em .25em 	#D3D3D3;
@@ -143,7 +145,7 @@
                 }
             }
             .buttons{
-                margin-top:.1rem;
+                margin-top:.2rem;
                 display:flex;
                 .balance{
                     width:70%;

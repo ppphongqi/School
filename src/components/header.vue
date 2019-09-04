@@ -24,7 +24,7 @@
     top:0;
     z-index:200;
     color:black;
-    background:#CD3333;
+    background:#b0252b;
     display: flex;
     flex-wrap:nowrap;
     border-radius: .4em;
@@ -45,12 +45,12 @@
         .school{
             width:100%;
             height:60%;
-            background: url('../assets/images/云师大.png') no-repeat ;
+            background: url('../assets/images/云师大1.png') no-repeat ;
         }
         .system{
             width:100%;
             height:40%;
-            background:url('../assets/images/system.png') no-repeat center;
+            background:url('../assets/images/system1.png') no-repeat center;
         }
     }
 }

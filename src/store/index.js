@@ -12,9 +12,23 @@ const store = new Vuex.Store({
 
     },
     actions:{
-        getUser(){}
+    //     getUser({commit,state}){
+    //         // return new Promise((resolve,reject)=>{
+    //         //     getUserInfo(Vue.prototype.$axios).then(data =>{
+    //         //         if(!data){
+    //         //             reject('验证失败')
+    //         //         }
+    //         //         try{
+    //         //
+    //         //         }catch(err){
+    //         //
+    //         //         }
+    //         //     })
+    //         // })
+    //     }
     }
-})
+}
+)
 
 
 export default store

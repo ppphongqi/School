@@ -88,6 +88,7 @@
         border-radius: .2em;
         background: #F5F5F5;
         box-shadow: 0 .05em .25em 	#D3D3D3;
+
         /*width:100%;*/
         height:20rem;
         color:black;
@@ -145,5 +146,10 @@
             }
 
         }
+
 }
 </style>
+
+
+
+

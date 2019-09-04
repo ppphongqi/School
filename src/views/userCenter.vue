@@ -5,8 +5,11 @@
 
 
                 <div class="name">
+
                     <div class="Stu-num"> <span>学号:{{ studentNumber }}</span></div>
                     <div class="stu-name"> <span>姓名:{{ studentName }}</span></div>
+
+
                 </div>
                 <div class="grade">
                     <div class="stu-gra"><span>年级:{{ grade }}</span></div>
@@ -47,6 +50,7 @@
                 grade:'2016',
                 major:'计算机科学',
                 stuClass:'1班',
+
             }
         }
     }
@@ -58,6 +62,7 @@
         width:95%;
     }
 </style>
+
 
 <style lang="scss" scoped>
     .studentInfo{
@@ -149,3 +154,7 @@
         }
     }
 </style>
+
+
+
+

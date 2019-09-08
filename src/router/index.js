@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+import store from "../store/index"
 // import adminRouter from "./module/admin";
 // import userRouter from "./module/user";
 
@@ -47,18 +48,24 @@ const router = new Router({
         // .concat(adminRouter)
 });
 
-// router.beforeEach((to,from,next)=>{
-//     document.body.scrollTop = 0 ;
-//     document.documentElement.scrollTop=0;
-//     if(to.matched.some(record => record.meta.isStudent)){
-//         if(to.matched.some(record => record.meta.requireLogin)){
-//             next()
-//         }
-//     }else if(to.matched.some(record => record.meta.isTeacher)){
-//
-//     }
-// })
+router.beforeEach((to, from, next) => {
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
+    if(to.matched.some(record => record.meta.requireLogin)){
+        store.dispatch('getUser').then(data => {
+            if(data.code == 200){
+                next()
+            }else{
+                next('/login')
+            }
+        }).catch(err => {
+            console.log(err)
+            next('/login')
+        })
 
+    }
+    next()
+})
 
 
 export default router;

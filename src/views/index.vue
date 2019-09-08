@@ -59,8 +59,27 @@
             }
         },
         methods:{
-            goLogin(){
-                this.$router.push('/user')
+
+
+            async goLogin(){
+                let result = await this.$axios.post('/user/login',this.userInfo)
+                console.log(result)
+                if(result && result.data.code == 200){
+                    localStorage.setItem('token',result.data.token)
+                    localStorage.setItem('userinfo',JSON.stringify(result.data.userinfo))
+                    this.$router.go('')
+                }else{
+                    console.log('失败')
+                }
+
+
+
+
+
+
+
+
+
             },
             goRegister(){
                 this.$router.push('/register')

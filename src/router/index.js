@@ -48,24 +48,24 @@ const router = new Router({
         // .concat(adminRouter)
 });
 
-router.beforeEach((to, from, next) => {
-    document.body.scrollTop = 0
-    document.documentElement.scrollTop = 0
-    if(to.matched.some(record => record.meta.requireLogin)){
-        store.dispatch('getUser').then(data => {
-            if(data.code == 200){
-                next()
-            }else{
-                next('/login')
-            }
-        }).catch(err => {
-            console.log(err)
-            next('/login')
-        })
-
-    }
-    next()
-})
+// router.beforeEach((to, from, next) => {
+//     document.body.scrollTop = 0
+//     document.documentElement.scrollTop = 0
+//     if(to.matched.some(record => record.meta.requireLogin)){
+//         store.dispatch('getUser').then(data => {
+//             if(data.code == 200){
+//                 next()
+//             }else{
+//                 next('/login')
+//             }
+//         }).catch(err => {
+//             console.log(err)
+//             next('/login')
+//         })
+//
+//     }
+//     next()
+// })
 
 
 export default router;
